@@ -1,0 +1,21 @@
+@import '../../sass/App.scss';
+
+.for-your-pleasure {
+    .for-your-pleasure-main {
+        @include common-padding;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 60px;
+        .for-your-pleasure-about {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            >p {
+                max-width: 346px;
+            }
+        }
+    }
+}

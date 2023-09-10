@@ -1,0 +1,37 @@
+@import '../../sass/App.scss';
+
+.coffee-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 42px;
+    align-items: center;
+    justify-content: center;
+    @include common-padding;
+    .coffee-detail-content1 {
+        >img {
+            height: 355px;
+            @media(max-width: 800px) {
+                height: 175px;
+            }
+        }
+    }
+    .coffee-detail-content2 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        >h2 {
+            text-align: center;
+        }
+        .beans_black {
+            margin-bottom: 20px;
+        } 
+        >p {
+            .coffee-detail-word {
+                font-weight: 700;
+            }
+        }
+        .coffee-detail-description {
+            max-width: 418px;
+        }
+    }
+}

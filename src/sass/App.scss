@@ -1,0 +1,140 @@
+@mixin common-padding {
+    padding: 80px 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    color: #000;
+    font-family: Merienda;
+}
+
+button {
+    cursor: pointer;
+    font-family: Merienda;
+}
+
+input {
+    outline: none;
+    font-family: Merienda;
+}
+
+h1 {
+    font-size: 40px;
+    @media(max-width: 800px) {
+      font-size: 28px;
+    }
+    @media(max-width: 480px) {
+      font-size: 20px;
+    }
+}
+
+h2 {
+    font-size: 24px;
+    @media(max-width: 800px) {
+      font-size: 20px;
+    }
+    @media(max-width: 480px) {
+      font-size: 16px;
+    }
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    >a {
+        display: flex;
+        align-items: center;
+        >img {
+            position: relative;
+            bottom: 12px;
+        }
+    }
+}
+
+.beans_black {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+    img {
+      max-width: 100%;
+    }
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: black;
+      height: 1px;
+      width: 60px;
+    }
+  
+    &::before {
+      left: 55px;
+    }
+  
+    &::after {
+      right: 55px;
+    }
+  }
+  .beans_white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+    img {
+      max-width: 100%;
+    }
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      height: 1px;
+      width: 60px;
+    }
+  
+    &::before {
+      left: 55px;
+    }
+  
+    &::after {
+      right: 55px;
+    }
+  }
+  
+  .line {
+    display: flex;
+    justify-content: center;
+    .line-center {
+      margin-bottom: 60px;
+      width: 240px;
+      height: 1px;
+      background: #000;
+    }
+  }

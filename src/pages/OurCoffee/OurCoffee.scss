@@ -1,0 +1,51 @@
+@import '../../sass/App.scss';
+
+.Our-coffee {
+    .Our-coffee-about {
+        @include common-padding;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 60px;
+        .Our-coffee-about2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            >p {
+                max-width: 346px;
+            }
+        }
+    }
+    .Our-Coffee-goods {
+        .Coffee-goods-content1 {
+            display: flex;
+            gap: 81px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 60px;
+            @media(max-width: 800px) {
+                flex-direction: column;
+                gap: 41px;
+            }
+            .Coffee-goods-content1-left {
+                display: flex;
+                gap: 19px;
+                align-items: center;
+                text-align: center;
+            }
+            .Coffee-goods-content1-right {
+                display: flex;
+                align-items: center;
+                gap: 35px;
+                @media(max-width: 480px) {
+                    flex-direction: column;
+                }
+            }
+            .goods-content1_text {
+                padding-top: 15px;
+            }
+        }
+    }
+}

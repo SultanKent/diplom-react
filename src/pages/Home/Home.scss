@@ -1,0 +1,27 @@
+@import '../../sass/App.scss';
+
+.Home {
+    .Home_about {
+        @include common-padding;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .beans_black {
+            margin-bottom: 20px;
+        }
+        >p {
+            max-width: 589px;
+        }
+    }
+    .Coffee_best {
+        @include common-padding;
+        background: url(../../img/Coffee_best.png);
+        >h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+}

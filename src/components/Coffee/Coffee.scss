@@ -1,0 +1,29 @@
+.coffee-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    @media(max-width: 800px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 0px;
+    }
+    @media(max-width: 480px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .coffee-item {
+        padding: 22px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.65);        
+        >a {
+            img {
+                width: 167px;
+                height: 115px;
+                margin-bottom: 14px;
+            }
+            p {
+                color: #000;
+            }
+        }
+    }
+}
