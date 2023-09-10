@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './OurCoffee.scss';
 import CoffeeList from '../../components/Coffee/CoffeeList';
 import SearchBar from '../../components/SearchBar/SearchBar';
-import CountryFilter from '../../components/CountryFilter/CountryFilter'; // Импортируйте компонент фильтрации по стране
+import CountryFilter from '../../components/CountryFilter/CountryFilter'; 
 import girl_coffee from '../../img/girl-coffee.png';
 import black_beans from '../../img/black-beans.png';
 
@@ -15,7 +15,7 @@ const OurCoffee = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/db.json'); 
+        const response = await fetch('./public/db.json'); 
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }

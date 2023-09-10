@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Routes from './components/Routes';
@@ -10,7 +10,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/db.json');
+        const response = await fetch('./public/db.json');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
