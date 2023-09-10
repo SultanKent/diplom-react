@@ -8,8 +8,8 @@ const CoffeeList = ({ coffees }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const response = await fetch('./public/db.json'); 
+      try { 
+        const response = await fetch(process.env.PUBLIC_URL + '/db.json');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }

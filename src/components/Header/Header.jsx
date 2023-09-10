@@ -19,7 +19,7 @@ const Header = () => {
 
   switch (location.pathname) {
     case '/':
-      background = `/images/Home.png`;
+      background = `${process.env.PUBLIC_URL}/images/Home.png`;
       pageTitle = 'Everything You Love About Coffee';
       page_beans = '.';
       pageDescription1 = 'We make every day full of energy and taste';
@@ -31,7 +31,7 @@ const Header = () => {
       };
       break;
     case '/our-coffee':
-      background = '/images/OurCoffee.png';
+      background = `${process.env.PUBLIC_URL}/images/OurCoffee.png`;
       pageTitle = 'Our Coffee';
       headerStyle = {
         background: `url(${background})`,
@@ -39,7 +39,7 @@ const Header = () => {
       };
       break;
     case '/for-your-pleasure':
-      background = '/images/Pleasure.png';
+      background = `${process.env.PUBLIC_URL}/images/Pleasure.png`;
       pageTitle = 'For Your Pleasure';
       headerStyle = {
         background: `url(${background})`,
@@ -47,7 +47,7 @@ const Header = () => {
       };
       break;
     default:
-      background = '/images/OurCoffee.png';
+      background = '/';
       pageTitle = 'Our Coffee';
       headerStyle = {
         background: `url(${background})`,

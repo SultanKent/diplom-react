@@ -15,7 +15,7 @@ const OurCoffee = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('./public/db.json'); 
+        const response = await fetch(process.env.PUBLIC_URL + '/db.json');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
