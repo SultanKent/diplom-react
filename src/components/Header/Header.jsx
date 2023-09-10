@@ -47,7 +47,7 @@ const Header = () => {
       };
       break;
     default:
-      background = '/';
+      background = `${process.env.PUBLIC_URL}/images/OurCoffee.png`;
       pageTitle = 'Our Coffee';
       headerStyle = {
         background: `url(${background})`,
